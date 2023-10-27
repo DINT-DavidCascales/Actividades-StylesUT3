@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
 
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="4"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Border}">
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="BorderThickness" Value="3"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="CornerRadius" Value="3"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Margin" Value="4"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Margin" Value="4"></Setter>
+        </Style>
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="Margin" Value="12"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}" x:Key="stackPanelMargin5">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+    </Window.Resources>
     <DockPanel LastChildFill="True">
 
         <StackPanel DockPanel.Dock="Top">
@@ -19,8 +44,8 @@
             <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="20">David cascales</TextBlock>
 
             <DockPanel DockPanel.Dock="Right" Margin="5">
-                <Button Margin="4">Aceptar</Button>
-                <Button Margin="4">Cancelar</Button>
+                <Button >Aceptar</Button>
+                <Button >Cancelar</Button>
 
             </DockPanel>
 
@@ -33,9 +58,9 @@
             </Grid.ColumnDefinitions>
 
 
-            <StackPanel Grid.Column="0" Margin="5">
+            <StackPanel Grid.Column="0" Style="{StaticResource stackPanelMargin5}">
 
-                <Border BorderBrush="Black" BorderThickness="3" Margin="5" Background="#FF01B3FF" CornerRadius="3">
+                <Border Background="#FF01B3FF" >
                     <Border.Effect>
                         <DropShadowEffect></DropShadowEffect>
                     </Border.Effect>
@@ -51,33 +76,33 @@
                             <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
 
-                        <TextBlock Grid.Row="0" Grid.Column="0" Margin="4">Nombre</TextBlock>
-                        <TextBox Grid.Row="0" Grid.Column="1" Margin="4"></TextBox>
+                        <TextBlock Grid.Row="0" Grid.Column="0" >Nombre</TextBlock>
+                        <TextBox Grid.Row="0" Grid.Column="1" ></TextBox>
                         <Image Grid.Row="0" Grid.Column="2" Margin="4" Source="/Resources/info.png" Width="20" ToolTip="Máximo 100 caracteres"></Image>
 
 
 
-                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="4">Edad</TextBlock>
-                        <TextBox Grid.Row="1" Grid.Column="1" Margin="4"></TextBox>
+                        <TextBlock Grid.Row="1" Grid.Column="0" >Edad</TextBlock>
+                        <TextBox Grid.Row="1" Grid.Column="1" ></TextBox>
                         <Image Grid.Row="1" Grid.Column="2" Margin="4" Source="/Resources/info.png" Width="20" ToolTip="Número entre 0 y 100"></Image>
 
 
-                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="4">Dirección</TextBlock>
-                        <TextBox Grid.Row="2" Grid.Column="1" Margin="4"></TextBox>
+                        <TextBlock Grid.Row="2" Grid.Column="0" >Dirección</TextBlock>
+                        <TextBox Grid.Row="2" Grid.Column="1" ></TextBox>
                         <Image Grid.Row="2" Grid.Column="2" Margin="4" Source="/Resources/info.png" Width="20" ToolTip="Incluir codigo postal"></Image>
 
 
                     </Grid>
                 </Border>
 
-                <Border BorderBrush="Black" BorderThickness="3" Margin="5" Background="#FFF7EDBE" CornerRadius="3">
+                <Border  Background="#FFF7EDBE">
                     <Border.Effect>
                         <DropShadowEffect></DropShadowEffect>
                     </Border.Effect>
                     <StackPanel>
                         <WrapPanel>
-                            <GroupBox Header="Aficiones" Margin="12" Width="200">
-                                <StackPanel Margin="5">
+                            <GroupBox Header="Aficiones" >
+                                <StackPanel Style="{StaticResource stackPanelMargin5}">
                                     <CheckBox>Hacer deporte</CheckBox>
                                     <CheckBox>Viajar</CheckBox>
                                     <CheckBox>Ver series</CheckBox>
@@ -85,8 +110,8 @@
                                 </StackPanel>
 
                             </GroupBox>
-                            <GroupBox Header="Estado Civil" Margin="12" Width="200">
-                                <StackPanel Margin="5">
+                            <GroupBox Header="Estado Civil">
+                                <StackPanel Style="{StaticResource stackPanelMargin5}">
                                     <RadioButton IsChecked="True">Soltero</RadioButton>
                                     <RadioButton>Casado</RadioButton>
                                     <RadioButton>Divorciado</RadioButton>
