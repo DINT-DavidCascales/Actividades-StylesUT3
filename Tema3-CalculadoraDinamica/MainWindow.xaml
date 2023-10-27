@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Tema3_Calculadora"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinWidth="300">
-    <Grid Margin="5">
+    <Grid Margin="5" x:Name="gridPrincipal">
         
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -27,11 +27,11 @@
              </Viewbox>
         </Border>
 
-        <Button Tag="1"  Grid.Column="0" Grid.Row="1" Margin="12" Click="Button_Click">
+        <!--<Button Tag="1"  Grid.Column="0" Grid.Row="1" Margin="12" Click="Button_Click">
             <Viewbox>
                 <TextBlock>1</TextBlock>
             </Viewbox>
-        </Button>
+        </Button>-->
 
 
 
