@@ -14,26 +14,46 @@
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
         </Style>
-        <Style TargetType="{x:Type Border}">
+        <Style TargetType="{x:Type Border}" x:Key="borde1">
             <Setter Property="BorderBrush" Value="Black"></Setter>
             <Setter Property="Margin" Value="5"></Setter>
             <Setter Property="CornerRadius" Value="2"></Setter>
             <Setter Property="BorderThickness" Value="4"></Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#FF510CED" Offset="0.005"/>
+                        <GradientStop Color="#FFF5D608" Offset="0.946"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Border}" x:Key="borde2">
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="CornerRadius" Value="2"></Setter>
+            <Setter Property="BorderThickness" Value="4"></Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="Red" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
         </Style>
         <Style TargetType="{x:Type WrapPanel}">
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
         </Style>
+
+       
+        
     </Window.Resources>
 
 
     <StackPanel>
-        <Border>
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF510CED" Offset="0.005"/>
-                    <GradientStop Color="#FFF5D608" Offset="0.946"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        <Border Style="{StaticResource borde1}">
             <StackPanel>
                 <TextBlock Text="Los Ángeles Lakers" ></TextBlock>
                 <WrapPanel>
@@ -47,13 +67,7 @@
 
             </StackPanel>
         </Border>
-        <Border >
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="Red" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        <Border Style="{StaticResource borde2}">
             <StackPanel>
                 <TextBlock Text="Miami Heat" Foreground="White"></TextBlock>
                 <WrapPanel >

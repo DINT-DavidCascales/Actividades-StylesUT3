@@ -78,7 +78,7 @@
         </StackPanel>
         <StackPanel  Style="{StaticResource stackpanelApellido}">
            
-            <TextBlock  Text="Apellido"   />
+            <TextBlock  Text="Apellido"/>
             <TextBox  Text="" />
         </StackPanel>
 
