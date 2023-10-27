@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tema3-FormularioStackPanel"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tema3-EquiposNBA", "Tema3-EquiposNBA\Tema3-EquiposNBA.csproj", "{1FA2BC1C-7946-4B5E-A1DC-EE47A33753C2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tema3-VisorImagenes", "Tema3-VisorImagenes\Tema3-VisorImagenes.csproj", "{39B11FA2-1C76-4638-B650-461079C4A2D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1FA2BC1C-7946-4B5E-A1DC-EE47A33753C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FA2BC1C-7946-4B5E-A1DC-EE47A33753C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FA2BC1C-7946-4B5E-A1DC-EE47A33753C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B11FA2-1C76-4638-B650-461079C4A2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B11FA2-1C76-4638-B650-461079C4A2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B11FA2-1C76-4638-B650-461079C4A2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B11FA2-1C76-4638-B650-461079C4A2D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
