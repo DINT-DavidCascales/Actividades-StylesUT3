@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tema3-Calculadora", "Tema3-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tema3-Formulario", "Tema3-Formulario\Tema3-Formulario.csproj", "{36AF5275-1C14-4CE8-BBDF-01B46D7A921B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tema3-CalculadoraDinamica", "Tema3-CalculadoraDinamica\Tema3-CalculadoraDinamica.csproj", "{B0F11539-884B-4C00-A9E1-2ECFCD11E70F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{36AF5275-1C14-4CE8-BBDF-01B46D7A921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36AF5275-1C14-4CE8-BBDF-01B46D7A921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36AF5275-1C14-4CE8-BBDF-01B46D7A921B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F11539-884B-4C00-A9E1-2ECFCD11E70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F11539-884B-4C00-A9E1-2ECFCD11E70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F11539-884B-4C00-A9E1-2ECFCD11E70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F11539-884B-4C00-A9E1-2ECFCD11E70F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
