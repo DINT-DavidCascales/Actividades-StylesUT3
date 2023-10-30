@@ -23,28 +23,36 @@ namespace Tema3_Calculadora
         public MainWindow()
         {
             InitializeComponent();
+            int numBoton=1;
+            
+            for (int i = 1; i <= 3; i++)
+            {
 
-            TextBlock t1=new TextBlock();
-            Viewbox v1= new Viewbox(); 
-            Button btn1= new Button();
+                for (int j = 0; j <=2 ; j++)
+                {
+                    TextBlock t1 = new TextBlock();
+                    Viewbox v1 = new Viewbox();
+                    Button btn = new Button();
 
-            t1.Text = "1";
-            btn1.Tag = "1";
-            btn1.Margin = new Thickness(12);
-            v1.Child = t1;
-            btn1.Content = v1;
+                    t1.Text = $"{numBoton}";
+                    btn.Tag = $"{numBoton}";
+                    btn.Margin = new Thickness(12);
+                    v1.Child = t1;
+                    btn.Content = v1;
 
-            btn1.Click += Button_Click;
+                    btn.Click += Button_Click;
 
-            Grid.SetColumn(btn1,0);
-            Grid.SetRow(btn1,1);
-           gridPrincipal.Children.Add(btn1);
+                    Grid.SetColumn(btn, j);
+                    Grid.SetRow(btn, i);
+                    gridPrincipal.Children.Add(btn);
+                    numBoton++;
+                }
+            }
+
+           
         }
 
-        private void Btn1_Click(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
